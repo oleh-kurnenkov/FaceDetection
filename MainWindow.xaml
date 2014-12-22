@@ -1,10 +1,8 @@
 ﻿<Window x:Class="face_detection.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="400" Width="800" Loaded="Wnd_loaded">
+        Title="MainWindow" Height="400" Width="482" Loaded="Wnd_loaded">
     <Canvas>
-        <Button Content="Snapshot" Name="btnSnp" Canvas.Left="216" Canvas.Top="335" Click="snpClick" />
-        <Image Name="DBimage" Height="200" Width="200" Canvas.Left="500" Canvas.Top="20"/>
         <Image Name="WebCamImage" Canvas.Left="20" Canvas.Top="20" Height="300" Width="400" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -15,8 +13,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button Content="Add" Canvas.Left="363" Canvas.Top="335" Width="75" Click="add"/>
-        <Button Content="Button" Canvas.Left="567" Canvas.Top="335" Width="75" RenderTransformOrigin="-0.257,0.489" Click="getImagesCount"/>
-        <Button Content="Button" Canvas.Left="598" Canvas.Top="273" Width="75" Click="Button_Click"/>
+        <Button Content="Add" Canvas.Left="180" Canvas.Top="341" Width="75" Click="add"/>
     </Canvas>
 </Window>

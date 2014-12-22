@@ -28,7 +28,7 @@ namespace face_detection
     /// Interaction logic for MainWindow.xaml
     /// </summary>
 
-
+    
     public partial class MainWindow : Window
     {
         private Capture capture;
@@ -51,7 +51,7 @@ namespace face_detection
             Image<Gray, Byte> grayFrame = currentFrame.Convert<Gray, Byte>();
 
             Rectangle[] dtc = null;
-                dtc = haarCascade.DetectMultiScale(grayFrame, 1.1, 5, new System.Drawing.Size(100, 100), new System.Drawing.Size(800, 800));
+                dtc = haarCascade.DetectMultiScale(grayFrame, 1.4, 2, new System.Drawing.Size(100, 100), new System.Drawing.Size(800, 800));
                currentFrame.ROI = dtc[0];
                Image<Bgr,Byte> saveFrame = currentFrame.Resize(200,200,INTER.CV_INTER_LANCZOS4,true);
             StringBuilder name = new StringBuilder("face");
@@ -96,7 +96,7 @@ namespace face_detection
                 Image<Gray, Byte> grayFrame = currentFrame.Convert<Gray, Byte>();
                 Rectangle[] dtc = null;
 
-                dtc = haarCascade.DetectMultiScale(grayFrame, 1.4, 3, new System.Drawing.Size(150, 150), new System.Drawing.Size(250, 250));
+                dtc = haarCascade.DetectMultiScale(grayFrame, 1.4, 4, new System.Drawing.Size(150, 150), new System.Drawing.Size(250, 250));
                 
                 //var detectedFaces = currentFrame.DetectHaarCascade(haarCascade)[0];
 
@@ -111,9 +111,7 @@ namespace face_detection
                     MessageBox.Show(ex.Message);
                 }
                 WebCamImage.Source = ToBitmapSource(currentFrame);
-                //if(dtc!=null)
-                //currentFrame.ROI = dtc[0];
-                //DBimage.Source = ToBitmapSource(currentFrame);
+                
                 currentFrame.Dispose();
                 GC.Collect();
             }
@@ -147,16 +145,11 @@ namespace face_detection
             Image<Gray, Byte> grayFrame = currentFrame.Convert<Gray, Byte>();
 
             Rectangle[] dtc = null;
-            dtc = haarCascade.DetectMultiScale(grayFrame, 1.4,3, new System.Drawing.Size(150, 150), new System.Drawing.Size(250, 250));
+            dtc = haarCascade.DetectMultiScale(grayFrame, 1.4,4, new System.Drawing.Size(150, 150), new System.Drawing.Size(250, 250));
 
             currentFrame.ROI = dtc[0];
 
-           Image<Gray,Byte> imgToDB = currentFrame.Resize(8,8, INTER.CV_INTER_NN).Convert<Gray,Byte>();
-           StringBuilder name = new StringBuilder("face");
-           name.AppendFormat("{0}.jpg", i);
-           String n = name.ToString();
-           imgToDB.Save(n);
-           i++;
+           Image<Gray,Byte> imgToDB = currentFrame.Resize(8,8, INTER.CV_INTER_CUBIC).Convert<Gray,Byte>();
             BitmapSource src = ToBitmapSource(imgToDB);
             Bitmap btm = BitmapFromSource(src);
             System.Drawing.Image img = (System.Drawing.Image)btm;
@@ -164,34 +157,43 @@ namespace face_detection
             var img2 = new Bitmap(img);
             img2.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
 
-            byte[] imgtoDB = ms.ToArray(); ;
+            byte[] imgtoDB = ms.ToArray(); 
             String connectionString = @"Data Source=(localdb)\v11.0;Initial Catalog=aa;Integrated Security=True;Pooling=False";
 
-            using(SqlConnection connection = new SqlConnection(
-       connectionString))
+            List<byte[]> imgs = getFromDB();
+            int count = 0;
+            for (int i = 0; i < imgs.Count;i++)
             {
-                SqlCommand command = new SqlCommand(
-        @"INSERT INTO face1 (face,id) VALUES(@face,@id)", connection);
-
-                SqlParameter param = new SqlParameter();
-                param.ParameterName = "@face";
-                param.Value = imgtoDB;
-                param.SqlDbType = System.Data.SqlDbType.Image;
-                param.Size = imgtoDB.Length;
-                command.Parameters.Add(param);
-                Random random = new Random();
-                param = new SqlParameter();
-                param.ParameterName = "@id";
-                param.Value = random.Next(1,100000);
-                param.SqlDbType = System.Data.SqlDbType.Int;
-                command.Parameters.Add(param); 
-
-
-                
-                connection.Open();
-                command.ExecuteNonQuery();
+                MemoryStream imgMS = new MemoryStream(imgs[i]);
+                Bitmap DBimg = new Bitmap(imgMS);
+                if (imageCompare(btm, DBimg) < 7)
+                    count++;
+               
             }
+            if (count == 0)
+                using (SqlConnection connection = new SqlConnection(
+           connectionString))
+                {
+                    SqlCommand command = new SqlCommand(
+            @"INSERT INTO face1 (face,id) VALUES(@face,@id)", connection);
 
+                    SqlParameter param = new SqlParameter();
+                    param.ParameterName = "@face";
+                    param.Value = imgtoDB;
+                    param.SqlDbType = System.Data.SqlDbType.Image;
+                    param.Size = imgtoDB.Length;
+                    command.Parameters.Add(param);
+                    Random random = new Random();
+                    param = new SqlParameter();
+                    param.ParameterName = "@id";
+                    param.Value = random.Next(1, 100000);
+                    param.SqlDbType = System.Data.SqlDbType.Int;
+                    command.Parameters.Add(param);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("added");
+                }
+            else MessageBox.Show("already in DB");
 
 
             timer.Start();
@@ -240,17 +242,6 @@ namespace face_detection
             return ms.ToArray();
         }
 
-        private void getImagesCount(object sender, RoutedEventArgs e)
-        {
-        
-            var imgs = getFromDB();
-            var ms =  new MemoryStream(imgs[0]);
-            Bitmap img = new Bitmap(ms);
-            ms = new MemoryStream(imgs[1]);
-            Bitmap img2 = new Bitmap(ms);
-            MessageBox.Show(imageCompare(img,img2).ToString());
-            DBimage.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(img.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
-        }
 
 private int imageCompare(Bitmap first, Bitmap second)
         {
@@ -302,16 +293,6 @@ private int imageCompare(Bitmap first, Bitmap second)
             return DiferentPixels;
         }
 
-private void Button_Click(object sender, RoutedEventArgs e)
-{
-    var imgs = getFromDB();
-    MemoryStream ms = new MemoryStream(imgs[j]);
-    Bitmap img = new Bitmap(ms);
-    DBimage.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(img.GetHbitmap(),
-        IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
-    j++;
-    if (j >= imgs.Count)
-        j = 0;
-}
+
     }
 }
