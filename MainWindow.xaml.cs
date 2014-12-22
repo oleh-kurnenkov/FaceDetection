@@ -44,24 +44,7 @@ namespace face_detection
             
         }
       
-        private void snpClick(object sender, RoutedEventArgs e)
-        {
-            timer.Stop();
-            currentFrame = capture.QueryFrame();
-            Image<Gray, Byte> grayFrame = currentFrame.Convert<Gray, Byte>();
-
-            Rectangle[] dtc = null;
-                dtc = haarCascade.DetectMultiScale(grayFrame, 1.4, 2, new System.Drawing.Size(100, 100), new System.Drawing.Size(800, 800));
-               currentFrame.ROI = dtc[0];
-               Image<Bgr,Byte> saveFrame = currentFrame.Resize(200,200,INTER.CV_INTER_LANCZOS4,true);
-            StringBuilder name = new StringBuilder("face");
-            name.AppendFormat("{0}.jpg", i);
-            String n = name.ToString();
-            saveFrame.Save(n);
-            i++;
-            timer.Start();
-        }
-
+    
         private void Wnd_loaded(object sender, RoutedEventArgs e)
         {
             try
