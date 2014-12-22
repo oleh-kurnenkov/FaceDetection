@@ -52,14 +52,8 @@ namespace face_detection
 
             Rectangle[] dtc = null;
                 dtc = haarCascade.DetectMultiScale(grayFrame, 1.1, 5, new System.Drawing.Size(100, 100), new System.Drawing.Size(800, 800));
-
-            //var detectedFaces = grayFrame.DetectHaarCascade(haarCascade)[0];
-
-            //foreach (var face in detectedFaces)
-            //    currentFrame.Draw(face.rect, new Bgr(0, double.MaxValue, 0), 3);
                currentFrame.ROI = dtc[0];
                Image<Bgr,Byte> saveFrame = currentFrame.Resize(200,200,INTER.CV_INTER_LANCZOS4,true);
-                //currentFrame.Draw(dtc[0], new Bgr(0, double.MaxValue, 0), 3);
             StringBuilder name = new StringBuilder("face");
             name.AppendFormat("{0}.jpg", i);
             String n = name.ToString();
@@ -157,7 +151,7 @@ namespace face_detection
 
             currentFrame.ROI = dtc[0];
 
-           Image<Gray,Byte> imgToDB = currentFrame.Resize(16,16, INTER.CV_INTER_NN).Convert<Gray,Byte>();
+           Image<Gray,Byte> imgToDB = currentFrame.Resize(8,8, INTER.CV_INTER_NN).Convert<Gray,Byte>();
            StringBuilder name = new StringBuilder("face");
            name.AppendFormat("{0}.jpg", i);
            String n = name.ToString();
@@ -262,10 +256,10 @@ private int imageCompare(Bitmap first, Bitmap second)
         {
             int DiferentPixels = 0;
             float avr1=0, avr2 = 0;
-           int[] clrs1= new int[256];
-           int[] clrs2 = new int[256];
-           int[] clrs3 = new int[256];
-           int[] clrs4 = new int[256];
+           int[] clrs1= new int[64];
+           int[] clrs2 = new int[64];
+           int[] clrs3 = new int[64];
+           int[] clrs4 = new int[64];
             Bitmap container = new Bitmap(first.Width, first.Height);
             for (int i = 0; i < first.Width; ++i)
             {
@@ -273,8 +267,8 @@ private int imageCompare(Bitmap first, Bitmap second)
                 {
                     Color secondColor = second.GetPixel(i, j);
                     Color firstColor = first.GetPixel(i, j);
-                    clrs1[i + j] = firstColor.R + firstColor.G + firstColor.B;
-                    clrs2[i + j] = secondColor.R + secondColor.G + secondColor.B;
+                    clrs1[i * j] = firstColor.R + firstColor.G + firstColor.B;
+                    clrs2[i * j] = secondColor.R + secondColor.G + secondColor.B;
                     avr1 += clrs1[i * j];
                     avr2 += clrs2[i * j];
                 }
