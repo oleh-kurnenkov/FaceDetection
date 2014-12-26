@@ -1,0 +1,111 @@
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\face detection.exe.config
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\face detection.exe
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\face detection.pdb
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\face detection.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\App.g.cs
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\face detection_MarkupCompile.cache
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\face detection.g.resources
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\face_detection.Properties.Resources.resources
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\face detection.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\face detection.exe
+C:\Users\user\Desktop\LABS TA\face detection\face detection\obj\Debug\face detection.pdb
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\Emgu.CV.dll
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\Emgu.CV.UI.dll
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\Emgu.Util.dll
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\ZedGraph.dll
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\Emgu.CV.xml
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\Emgu.CV.UI.xml
+C:\Users\user\Desktop\LABS TA\face detection\face detection\bin\Debug\Emgu.Util.xml
+J:\Теорія алгоритмів\face detection\face detection\bin\Debug\face detection.exe.config
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\face detection.exe
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\face detection.pdb
+J:\Теорія алгоритмів\face detection\face detection\bin\Debug\face detection.exe
+J:\Теорія алгоритмів\face detection\face detection\bin\Debug\face detection.pdb
+J:\Теорія алгоритмів\face detection\face detection\bin\Debug\ZedGraph.dll
+J:\Теорія алгоритмів\face detection\face detection\bin\Debug\Emgu.CV.xml
+J:\Теорія алгоритмів\face detection\face detection\bin\Debug\Emgu.CV.UI.xml
+J:\Теорія алгоритмів\face detection\face detection\bin\Debug\Emgu.Util.xml
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\face detection.csprojResolveAssemblyReference.cache
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\MainWindow.baml
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\MainWindow.g.cs
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\App.g.cs
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\face detection_MarkupCompile.cache
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\face detection.g.resources
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\face_detection.Properties.Resources.resources
+J:\Теорія алгоритмів\face detection\face detection\obj\Debug\face detection.csproj.GenerateResource.Cache
+C:\Users\u\Desktop\face detection11\face detection\bin\Debug\face detection.exe.config
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\face detection.exe
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\face detection.pdb
+C:\Users\u\Desktop\face detection11\face detection\bin\Debug\face detection.exe
+C:\Users\u\Desktop\face detection11\face detection\bin\Debug\face detection.pdb
+C:\Users\u\Desktop\face detection11\face detection\bin\Debug\ZedGraph.dll
+C:\Users\u\Desktop\face detection11\face detection\bin\Debug\Emgu.CV.xml
+C:\Users\u\Desktop\face detection11\face detection\bin\Debug\Emgu.CV.UI.xml
+C:\Users\u\Desktop\face detection11\face detection\bin\Debug\Emgu.Util.xml
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\face detection.csprojResolveAssemblyReference.cache
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\MainWindow.baml
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\MainWindow.g.cs
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\App.g.cs
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\face detection_MarkupCompile.cache
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\face detection.g.resources
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\face_detection.Properties.Resources.resources
+C:\Users\u\Desktop\face detection11\face detection\obj\Debug\face detection.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\face detection.exe.config
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\face detection.exe
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\face detection.pdb
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\face detection.exe
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\face detection.pdb
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\Emgu.CV.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\Emgu.CV.UI.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\Emgu.Util.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\ZedGraph.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\Emgu.CV.xml
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\Emgu.CV.UI.xml
+C:\Users\user\Desktop\face detection11\face detection\bin\Debug\Emgu.Util.xml
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\App.g.cs
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\face detection_MarkupCompile.cache
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\face detection.g.resources
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\face_detection.Properties.Resources.resources
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\face detection.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\face detection11\face detection\obj\Debug\face detection.csprojResolveAssemblyReference.cache
+G:\face detection11\face detection\bin\Debug\face detection.exe.config
+G:\face detection11\face detection\obj\Debug\face detection.exe
+G:\face detection11\face detection\obj\Debug\face detection.pdb
+G:\face detection11\face detection\bin\Debug\face detection.exe
+G:\face detection11\face detection\bin\Debug\face detection.pdb
+G:\face detection11\face detection\bin\Debug\ZedGraph.dll
+G:\face detection11\face detection\bin\Debug\Emgu.CV.xml
+G:\face detection11\face detection\bin\Debug\Emgu.CV.UI.xml
+G:\face detection11\face detection\bin\Debug\Emgu.Util.xml
+G:\face detection11\face detection\obj\Debug\face detection.csprojResolveAssemblyReference.cache
+G:\face detection11\face detection\obj\Debug\MainWindow.baml
+G:\face detection11\face detection\obj\Debug\MainWindow.g.cs
+G:\face detection11\face detection\obj\Debug\App.g.cs
+G:\face detection11\face detection\obj\Debug\face detection_MarkupCompile.cache
+G:\face detection11\face detection\obj\Debug\face detection.g.resources
+G:\face detection11\face detection\obj\Debug\face_detection.Properties.Resources.resources
+G:\face detection11\face detection\obj\Debug\face detection.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\face detection.exe.config
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\face detection.exe
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\face detection.pdb
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\face detection.exe
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\face detection.pdb
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\Emgu.CV.dll
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\Emgu.CV.UI.dll
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\Emgu.Util.dll
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\ZedGraph.dll
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\Emgu.CV.xml
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\Emgu.CV.UI.xml
+C:\Users\user\Desktop\detection\face detection11\face detection\bin\Debug\Emgu.Util.xml
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\face detection.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\App.g.cs
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\face detection_MarkupCompile.cache
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\face detection.g.resources
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\face_detection.Properties.Resources.resources
+C:\Users\user\Desktop\detection\face detection11\face detection\obj\Debug\face detection.csproj.GenerateResource.Cache

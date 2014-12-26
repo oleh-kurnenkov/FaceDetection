@@ -1,0 +1,19 @@
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\face detection.exe.config
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\face detection.exe
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\face detection.pdb
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\Emgu.CV.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\Emgu.CV.UI.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\Emgu.Util.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\ZedGraph.dll
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\Emgu.CV.xml
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\Emgu.CV.UI.xml
+C:\Users\user\Desktop\face detection11\face detection\bin\Release\Emgu.Util.xml
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\MainWindow.baml
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\MainWindow.g.cs
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\App.g.cs
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\face detection_MarkupCompile.cache
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\face detection.g.resources
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\face_detection.Properties.Resources.resources
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\face detection.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\face detection.exe
+C:\Users\user\Desktop\face detection11\face detection\obj\Release\face detection.pdb
